@@ -26,10 +26,10 @@ public class PlayerThread extends Thread {
 
             while (true) {
                 otherPlayer.sendData(socketIn.readLine());
-
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            interrupt();
+            otherPlayer.interrupt();
         }
     }
 
