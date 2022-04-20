@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            TestServer testServer = new TestServer(80, 2);
+            TestServer testServer = new TestServer(80);
         } catch (IOException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
